@@ -1,0 +1,61 @@
+
+
+
+
+// Uppgift 6
+
+$PrimaryColor:blue;
+
+
+
+p{
+    color: $PrimaryColor;
+}
+
+
+// Uppgift 4
+
+@mixin buttonborderradius{
+    border-radius: 5px;
+}
+
+// Uppgift 5
+
+@mixin HeadStyle(){
+
+    color: red;
+    background-color: chartreuse;
+    
+}
+
+// Uppgift 1
+
+
+@function double($fontsize){
+    @return 2 * $fontsize;
+}
+
+h1{
+    font-size: double(5px);
+    @include HeadStyle;
+}
+
+button{
+    @include buttonborderradius;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
